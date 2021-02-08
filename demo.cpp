@@ -1,6 +1,3 @@
-#include "botan/srp6.h"
-#include "botan/system_rng.h"
-
 #include "srp_client.hpp"
 #include "srp_params.hpp"
 #include "srp_server.hpp"
@@ -8,9 +5,9 @@
 
 #include <iostream>
 
-using namespace std;
-
 int main() {
+  using std::cout, std::boolalpha, std::endl;
+
   Client client("ag", "dontuse12345");  // params are username, password
   Server server;
 
