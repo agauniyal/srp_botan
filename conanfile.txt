@@ -1,0 +1,5 @@
+[requires]
+botan/2.17.3
+
+[generators]
+cmake
