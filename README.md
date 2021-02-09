@@ -3,7 +3,7 @@ Minimal SRP Server/Client classes using Botan
 
 ----
 
-## Build executable
+## Build Executable (skip if only building WASM)
 ```
 mkdir build && cd build
 conan install ..
