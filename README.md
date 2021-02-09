@@ -24,4 +24,4 @@ Once built you can cd back to this project's directory
 em++ -std=c++17 --bind -s ALLOW_MEMORY_GROWTH=1 -s WASM=1 -I../botan/build/include ../botan/libbotan-3.a srp_server_client.cpp -o a.html
 ```
 
-You can now run a local http server and open a.html file in browser. Expose classes should be available on `Module` object.
+You can now run a local http server and open a.html file in browser. Exposed classes should be available on `Module` object.
