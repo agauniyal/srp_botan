@@ -24,3 +24,16 @@ class Server {
 
   auto getSecret() const { return _secret; }
 };
+
+#ifdef __EMSCRIPTEN__
+#include <emscripten/bind.h>
+using namespace emscripten;
+
+EMSCRIPTEN_BINDINGS(SRPServer) {
+  class_<Server>("SRPServer")
+      .constructor<>()
+      .function("step1_getB", &Server::step1_getB)
+      .function("step2_generateSecret", &Server::step2_generateSecret)
+      .function("getSecret", &Server::getSecret);
+}
+#endif

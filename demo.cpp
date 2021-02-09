@@ -1,5 +1,4 @@
 #include "srp_client.hpp"
-#include "srp_params.hpp"
 #include "srp_server.hpp"
 #include "utils.hpp"
 
